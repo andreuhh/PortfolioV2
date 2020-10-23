@@ -445,9 +445,69 @@ blog
 ===============
 */
 .emailCta{text-align: left;}
+.emailCta p{font-size: 1.5rem; }
 .emailCta p:first-child{font-size: 1.5rem; padding-top: 10%;}
 .emailCta p:nth-child(2){
   color: var(--secondary-col);
   font-weight: 500;
 }
+
+@media screen and (min-width: 1024px){
+  .emailCta{text-align: center;}
+}
+
+/*
+=============== 
+blog
+===============
+*/
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 2rem;
+  background: var(--dark-background);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.footer .social-icons {
+  margin-bottom: 0rem; 
+}
+.footer .social-icon {
+  color: var(--my-gray-1);
+}
+.footer .social-icon:hover {
+  color: var(--my-hover);
+}
+.footer p {
+  margin-top: 3rem; 
+  font-size: .8rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--my-gray-1);
+}
+
+.love{color: red;}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    grid-template-columns:  1fr;
+  }
+
+  .footer p{
+    order: 1;
+    margin-top: 0; 
+  }
+
+  .footer ul{
+    order: 0;
+  }
+}
+
 
