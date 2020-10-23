@@ -8,8 +8,8 @@ Variables
   --secondary-col:#74FAC3;
   --my-gray-1: #F4F3F1;
 
-  --ff-primary: 'Hind', sans-serif;
-  --ff-secondary: 'Domine', serif;
+  --ff-primary: 'Exo', sans-serif;
+  --ff-secondary: 'Exo', sans-serif;
   --transition: all 0.4s ease-out;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -367,6 +367,8 @@ main
 main{margin: 20% 5% 10% 5%;text-align: center;}
 
 section.projects{margin-bottom: 15%;}
+
+section.projects p{font-weight: 200;}
 
 .projects__container__single{margin-top: 10%;text-align: left;}
 .projects__container__single h4{padding-top: 2%; font-weight: 700;}
