@@ -7,7 +7,6 @@ Variables
   --dark-background: #2F2D2B;
   --secondary-col:#74FAC3;
   --my-gray-1: #F4F3F1;
-  --my-hover: #2aa3db;
 
   --ff-primary: 'Hind', sans-serif;
   --ff-secondary: 'Domine', serif;
@@ -335,7 +334,7 @@ Hero
 ===============
 */
 .hero{
-    height: 80vh;
+    height: 70vh;
     background: var(--dark-background);
     background-size: cover;
     background-position: center;
@@ -355,6 +354,10 @@ Hero
 }
 
 .hero-icons{margin: 0 auto;}
+
+@media screen and (min-width: 768px){
+  .hero{height: 80vh;}
+}
 
 /*
 =============== 
@@ -378,7 +381,7 @@ main{margin: 20% 5% 10% 5%;text-align: center;}
 }
 
 .btn--primary{
-  background-color: var(--dark-background);;
+  background-color: var(--dark-background);
   text-align: center;
   margin: 0 auto;
   color: var(--secondary-col);
@@ -390,19 +393,14 @@ main{margin: 20% 5% 10% 5%;text-align: center;}
   cursor: pointer;
   font-family: var(--ff-primary);
   margin: 50px;
+  transition: var(--transition);
 }
 
-/*.cardImg{
-  width: 100%;
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
-}*/
+.btn--primary:hover{
+  background-color: var(--secondary-col);
+  color: var(--dark-background);
+}
 
-.cardImg--1{background-image: url(img/hytta-sm.jpg);}
-.cardImg--2{background-image: url(img/acme.jpg);}
-.cardImg--3{background-image: url(img/casablu.jpg);}
-.cardImg--4{background-image: url(img/tranqui-sm.jpg);}
 
 @media screen and (min-width: 768px){
   .btn--primary{
