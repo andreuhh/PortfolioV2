@@ -334,7 +334,7 @@ Hero
 ===============
 */
 .hero{
-    height: 80vh;
+    height: 60vh;
     background: var(--dark-background);
     background-size: cover;
     background-position: center;
