@@ -3,15 +3,14 @@
 Variables
 ===============
 */
-
 :root {
   --dark-background: #2F2D2B;
   --secondary-col:#74FAC3;
   --my-gray-1: #F4F3F1;
   --my-hover: #2aa3db;
 
-  --ff-primary: 'Poppins', sans-serif;
-  --ff-secondary: 'PT Serif', serif;
+  --ff-primary: 'Hind', sans-serif;
+  --ff-secondary: 'Domine', serif;
   --transition: all 0.4s ease-out;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -37,10 +36,8 @@ Global Styles
 
 body {
   font-family: var(--ff-primary);
-  background: #f6f5f5;
   background: var(--dark-background);
   color: #f6f5f5;
-  line-height: 1.5;
   font-size: 0.875rem;
 }
 ul {
@@ -58,14 +55,14 @@ h1,
 h2,
 h3,
 h4 {
-  margin-bottom: 0.75rem;
-  font-family: 'PT Serif', serif;
-  color: var(--dark-background);
+  font-family: var(--ff-primary);
+  color: var(--my-gray-1);
   letter-spacing: 1px;
-  font-weight: 700;
 }
 h1 {
-  font-size: 3.5rem;
+  font-family: var(--ff-secondary);
+  font-size: 3.2rem;
+  font-weight: 700;
 }
 h2 {
   font-size: 2rem;
@@ -78,10 +75,11 @@ h4 {
 }
 p {
   font-size: 1.2rem;
-  margin-bottom: 1.25rem;
   color: var(--my-gray-1);
+  line-height: 25px;
 }
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 4rem;
   }
@@ -98,6 +96,24 @@ p {
     font-size: 1rem;
   }
 }
+
+@media screen and (min-width: 1000px){
+    h1 {
+        font-size: 7rem;
+      } 
+      h2 {
+        font-size: 3.2rem;
+      }
+      h3 {
+        font-size: 1.75rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+}
+
+
+
 /*  global classes */
 
 .logo{
@@ -124,14 +140,7 @@ p {
   font-size: 1rem;
   border: 2px solid var(--my-gray-1);
   cursor: pointer;
-  /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);*/
-  
 }
-/*
-.btn:hover {
-  color: var(--my-hover);
-  border: 2px solid var(--my-hover);
-}*/
 
 /* section */
 .section {
@@ -320,3 +329,35 @@ Sidebar
 .close-btn:hover {
   opacity: .9;
 }
+
+/*
+=============== 
+Hero
+===============
+*/
+.hero{
+    height: 80vh;
+    background: var(--dark-background);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;  
+    margin: 0 7%;
+}
+
+.hero__content span{
+    color: var(--secondary-col);
+}
+
+.hero h1{
+    color: var(--my-gray-1);
+}
+
+
+
+
+
+
+
