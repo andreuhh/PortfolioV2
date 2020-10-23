@@ -296,7 +296,7 @@ Sidebar
   text-align: center;
   display: grid;
   margin-top: 3rem;
-  width: 20rem;
+  width: 12rem;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   color: var(--my-gray-1);
@@ -367,11 +367,13 @@ main
 
 main{margin: 20% 5% 10% 5%;text-align: center;}
 
-.projects__container--single{margin-top: 10%;text-align: left;}
-.projects__container--single h4{padding-top: 2%; font-weight: 700;}
+section.projects{margin-bottom: 15%;}
+
+.projects__container__single{margin-top: 10%;text-align: left;}
+.projects__container__single h4{padding-top: 2%; font-weight: 700;}
 
 @media screen and (min-width: 768px){
-    main{margin: 15% 10% 10% 10%;text-align: center;} 
+    main{margin: 15% 7% 10% 7%;text-align: center;} 
     .projects__container{
         display: grid; 
         justify-content: space-around;
@@ -380,10 +382,20 @@ main{margin: 20% 5% 10% 5%;text-align: center;}
     }
 }
 
+@media screen and (min-width: 1024px){
+  main{margin: 15% 10% 10% 10%;text-align: center;} 
+  .projects__container{
+      display: grid; 
+      justify-content: space-around;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+  }
+}
+
 .btn--primary{
   background-color: var(--dark-background);
   text-align: center;
-  margin: 0 auto;
+  margin: 5% auto;
   color: var(--secondary-col);
   border: 1px solid var(--secondary-col);
   padding: .6rem 2.2rem;
@@ -392,7 +404,6 @@ main{margin: 20% 5% 10% 5%;text-align: center;}
   transition: var(--transition);
   cursor: pointer;
   font-family: var(--ff-primary);
-  margin: 50px;
   transition: var(--transition);
 }
 
@@ -403,12 +414,40 @@ main{margin: 20% 5% 10% 5%;text-align: center;}
 
 
 @media screen and (min-width: 768px){
-  .btn--primary{
-    padding: .8rem 2.5rem;
-  }
+  .btn--primary{padding: .8rem 2.5rem;}
+  section.projects{margin-bottom: 7%;}
 }
 
+/*
+=============== 
+blog
+===============
+*/
+.blog__container{text-align: left; padding-top: 3%;}
+.blog__container__single{padding: 5% 0;}
+.blog__container__single:last-child{border-bottom: 1px solid var(--my-gray-1);}
+.blog__container__single--container{padding-top: 5%;}
+
+p.date{padding-bottom: 10px; font-size: .9rem;}
 
 
+@media screen and (min-width: 768px){
+  .blog__container__single{display: flex; border-bottom: 1px solid var(--my-gray-1);}
+  .blog__container__single:first-child{border-top: 1px solid var(--my-gray-1);}
+  .blog__container__single img{width: 30%;}
+  .blog__container__single--container{width: 70%; padding-left: 5%;}
+  p.date{padding-top: 5%; font-size: 1rem;}
+}
 
+/*
+=============== 
+blog
+===============
+*/
+.emailCta{text-align: left;}
+.emailCta p:first-child{font-size: 1.5rem; padding-top: 10%;}
+.emailCta p:nth-child(2){
+  color: var(--secondary-col);
+  font-weight: 500;
+}
 
