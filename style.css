@@ -4,8 +4,8 @@ Variables
 ===============
 */
 :root {
-  --dark-background: #14181a;
   --dark-background: #2F2D2B;
+  --dark-background: #14181a;
   --secondary-col:#74FAC3;
   --my-gray-1: #F4F3F1;
   --text-tertiary: #98a6ae;
@@ -527,11 +527,20 @@ Projects Page
   }
 }
 
+/*
+=============== 
+About Page
+===============
+*/
+.hero__content--about h1{
+  font-size: 3rem;
+  text-align: left;
+}
 
-
-
-
-
+.description__text{
+  text-align: left;
+  padding-top: 5%;
+}
 
 
 
