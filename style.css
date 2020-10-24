@@ -4,12 +4,14 @@ Variables
 ===============
 */
 :root {
+  --dark-background: #14181a;
   --dark-background: #2F2D2B;
   --secondary-col:#74FAC3;
   --my-gray-1: #F4F3F1;
+  --text-tertiary: #98a6ae;
 
   --ff-primary: 'Exo', sans-serif;
-  --ff-secondary: 'Exo', sans-serif;
+  --ff-secondary: 'Commissioner', sans-serif;;
   --transition: all 0.4s ease-out;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -74,9 +76,9 @@ h4 {
   font-size: 1.5rem;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--my-gray-1);
-  line-height: 25px;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -368,10 +370,11 @@ main{margin: 20% 5% 10% 5%;text-align: center;}
 
 section.projects{margin-bottom: 15%;}
 
-section.projects p{font-weight: 200;}
+section.projects p{font-weight: 200; font-size: 1.1rem;}
 
 .projects__container__single{margin-top: 10%;text-align: left;}
 .projects__container__single h4{padding-top: 2%; font-weight: 700;}
+.projects__container__single p{color: var(--text-tertiary);}
 
 @media screen and (min-width: 768px){
     main{margin: 15% 7% 10% 7%;text-align: center;} 
@@ -446,9 +449,9 @@ email cta
 ===============
 */
 .emailCta{text-align: left;}
-.emailCta p:first-child{font-size: 1.3rem; padding-top: 15%;}
-.emailCta p:nth-child(2){
-  font-size: 1.5rem; 
+.emailCta p:first-child{padding-top: 15%; font-weight: 500;}
+.emailCta a{
+  font-size: 1.7rem; 
   color: var(--secondary-col);
   font-weight: 700;
 }
