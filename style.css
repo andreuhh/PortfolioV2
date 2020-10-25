@@ -751,6 +751,7 @@ CURSOR
   z-index: 1;
   /*backdrop-filter: grayscale();*/
   backdrop-filter: hue-rotate(180deg);
+  display: none;
 }
 
 .link-grow{
@@ -764,7 +765,8 @@ CURSOR
 
 @media screen and (min-width: 1025px){
   .cursor{
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
+    display: block;
   }
 }
 
