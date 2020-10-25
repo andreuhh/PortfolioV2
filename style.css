@@ -117,8 +117,8 @@ p {
 /*  global classes */
 
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background: var(--secondary-col);
     display: flex;
@@ -127,6 +127,8 @@ p {
     align-content: center; 
     text-align: center;
 }
+
+.logo a:hover{border-bottom: none !important;}
 
 .logo p{margin: 0; color: var(--dark-background);}
 
@@ -227,7 +229,7 @@ Navbar
   }
   .nav-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
@@ -542,18 +544,109 @@ About Page
   padding-top: 5%;
 }
 
+.description--sport{padding-top: 15%;}
+
+
+@media screen and (min-width: 768px){
+  .description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+  }
+  .description__text{order: 0; padding-top: 0;}
+  .description__img{order: 1;}
+}
+
+
+/*
+=============== 
+Skills
+===============
+*/
+section.skills{padding-top: 25%;}
+
+.skill {
+  margin-bottom: 1.25rem;
+}
+
+.skill p {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--my-gray-1);
+  text-align: left;
+}
+.skill-container {
+  background: var(--my-gray-1);
+  height: 1rem;
+  width: 90%;
+  border-radius: var(--radius);
+  position: relative;
+}
+.skill-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--secondary-col);
+  height: 100%;
+  width: 50%;
+  border-radius: var(--radius);
+}
+.value-100 {
+  width: 100%;
+}
+.value-90 {
+  width: 90%;
+}
+.value-70 {
+  width: 70%;
+}
+.value-60{
+  width: 60%;
+}
+.value-80 {
+  width: 80%;
+}
+.value-50{
+  width: 50%;
+}
+.skill-text {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.skill-text-60 {
+  left: 60%;
+}
+.skill-text-70 {
+  left: 70%;
+}
+.skill-text-90 {
+  left: 90%;
+}
+.skill-text-80 {
+  left: 80%;
+}
+.skill-text-100 {
+  left: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+  section.skills{padding-top: 15%;}
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+section.contacts{text-align: left;}
+section.contacts a{color: var(--secondary-col); font-weight: 700;}
+section.contacts p{padding-top: 2%;}
 
