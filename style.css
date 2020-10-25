@@ -643,10 +643,12 @@ section.skills{padding-top: 25%;}
   section.skills{padding-top: 15%;}
 }
 
-
-
-
+/*
+=============== 
+Contacts
+===============
+*/
 section.contacts{text-align: left;}
 section.contacts a{color: var(--secondary-col); font-weight: 700;}
-section.contacts p{padding-top: 2%;}
+section.contacts p{padding-top: 10%;}
 
