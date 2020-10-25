@@ -67,7 +67,7 @@ h1 {
 }
 h2 {
   
-  font-size: 2.3rem;
+  font-size: 2rem;
   text-align: left;
 }
 h3 {
@@ -652,3 +652,51 @@ section.contacts{text-align: left;}
 section.contacts a{color: var(--secondary-col); font-weight: 700;}
 section.contacts p{padding-top: 10%;}
 
+
+/*
+=============== 
+SINGLE PROJECT
+===============
+*/
+
+.hero--project{
+  background: url(img/resort.jpeg) no-repeat center center;
+  
+  background-size: cover;
+  background-position: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 15%;
+}
+
+.main__project h1{font-size: 3rem; text-align: left; margin-top: -10%;}
+
+.main__project--info{
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__project--info p{font-size: 1.1rem;}
+
+.main__project--info p,
+.main__project--info a{
+  color: var(--text-tertiary);
+}
+
+.main__project--text{
+  text-align: left;
+  padding-top: 10%;
+}
+
+@media screen and (min-width: 768px){
+  .hero--project{
+    margin-top: 5%;
+  }
+
+  .main__project--info,
+  .main__project--text{
+    padding-top: 3%;
+  }
+}
