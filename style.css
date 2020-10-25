@@ -36,6 +36,7 @@ Global Styles
 }
 
 body {
+  cursor: none;
   font-family: var(--ff-primary);
   background: var(--dark-background);
   color: #f6f5f5;
@@ -141,7 +142,7 @@ p {
   transition: var(--transition);
   font-size: 1rem;
   border: 2px solid var(--my-gray-1);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 /* section */
@@ -178,9 +179,10 @@ Navbar
   font-size: 1.1rem;
 }
 
-#nav a:hover{
+/*#nav a:hover{
   border-bottom: 2px solid var(--secondary-col);
-}
+}*/
+
 .nav-links {
   display: none;
 }
@@ -216,7 +218,7 @@ Navbar
   border-color: transparent;
   color: var(--my-gray-1);
   font-size: 1.8rem;
-  cursor: pointer;
+  /*cursor: pointer;*/
   justify-self: end;
   outline: none;
 }
@@ -236,6 +238,7 @@ Navbar
     column-gap: 2rem;
     justify-self: end;
     color: var(--secondary-col);
+    z-index: 100;
   }
   .nav-links a {
     text-transform: capitalize;
@@ -243,10 +246,9 @@ Navbar
     font-weight: bold;
     -webkit-transition: var(--transition);
     transition: var(--transition);
+   
   }
-  .nav-links a:hover {
-    color: var(--secondary-col);
-  }
+  
   .nav-center {
     color: var(--my-gray-1);
     display: grid;
@@ -326,7 +328,7 @@ Sidebar
   transition: var(--transition);
   color: var(--my-gray-1);
   outline: none;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 .close-btn:hover {
   opacity: .9;
@@ -409,7 +411,7 @@ section.projects p{font-weight: 200; font-size: 1.1rem;}
   font-size: 1.2rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  cursor: pointer;
+  /*cursor: pointer;*/
   font-family: var(--ff-primary);
   transition: var(--transition);
   outline: none;
@@ -551,7 +553,7 @@ About Page
   .hero__content--about h1{
     font-size: 3rem;
   }
-  
+
   .description{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -704,3 +706,46 @@ SINGLE PROJECT
     padding-top: 3%;
   }
 }
+
+/*
+=============== 
+CURSOR
+===============
+*/
+.cursor{
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid var(--secondary-col);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: transform, background;
+  transform-origin: 100% 100%;
+  z-index: 1;
+  /*backdrop-filter: grayscale();*/
+  backdrop-filter: hue-rotate(180deg);
+}
+
+.link-grow{
+  transform: scale(1.5);
+  background: var(--text-tertiary);
+}
+
+.hovered-link{
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
