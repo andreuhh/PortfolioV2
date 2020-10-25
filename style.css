@@ -548,6 +548,10 @@ About Page
 
 
 @media screen and (min-width: 900px){
+  .hero__content--about h1{
+    font-size: 3rem;
+  }
+  
   .description{
     display: grid;
     grid-template-columns: 1fr 1fr;
