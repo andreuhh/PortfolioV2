@@ -20,3 +20,33 @@ closeBtn.addEventListener("click", function () {
 });
 // set year
 date.innerHTML = new Date().getFullYear();
+
+
+// TEXT SCRIPT
+const texts = ['Frontend Developer', 'UX Designer', 'Dreamer', 'Creative'];
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+
+(function type() {
+
+  if (count === texts.length) {
+    count = 0;
+  }
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.querySelector('.typing').textContent = letter;
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+  }
+  setTimeout(type, 450);
+}());
+
+
+
+
+
+

@@ -361,6 +361,31 @@ Hero
 
 .hero-icons{margin: 0 auto;}
 
+.intro{display: flex;}
+.typing{
+  margin-left: 10px;
+  position: relative;
+}
+
+.typing::after{
+  content: "";
+  position: absolute;
+  right: 5px;
+  width: 1px;
+  height: 30px;
+  /*border-right:  1px solid #fff;*/
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 768px){
   .hero{height: 80vh;}
 }
@@ -718,7 +743,7 @@ CURSOR
   border: 2px solid var(--secondary-col);
   border-radius: 50%;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-55%, -55%);
   pointer-events: none;
   transition: all 0.3s ease;
   transition-property: transform, background;
