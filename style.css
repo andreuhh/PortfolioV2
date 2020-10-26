@@ -72,7 +72,7 @@ h2 {
   text-align: left;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 h4 {
   font-size: 1.5rem;
@@ -546,6 +546,14 @@ Projects Page
 ===============
 */
 
+.btn--primary--project{text-align: center !important;}
+
+/*
+=============== 
+BLOG Page
+===============
+*/
+
 .blog__page{
   padding-bottom: 20%;
 }
@@ -691,14 +699,15 @@ SINGLE PROJECT
 */
 
 .hero--project{
-  background: url(img/resort.jpeg) no-repeat center center;
-  
+  background: url(img/hytta-bg.jpg) no-repeat center center;
   background-size: cover;
   background-position: center;
   margin-left: 0;
   margin-right: 0;
   margin-top: 15%;
 }
+
+.hero--project.hero--project{background: url(img/resortbg.jpg) no-repeat center center;}
 
 .main__project h1{font-size: 3rem; text-align: left; margin-top: -10%;}
 
@@ -716,9 +725,20 @@ SINGLE PROJECT
   color: var(--text-tertiary);
 }
 
-.main__project--text{
+.main__project--content{
   text-align: left;
   padding-top: 10%;
+}
+
+.main__project--content h3{
+  padding-top: 5%;
+  padding-bottom: 3%;
+  font-size: 2.1rem;
+}
+
+.main__project--content img{
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 @media screen and (min-width: 768px){
@@ -727,8 +747,14 @@ SINGLE PROJECT
   }
 
   .main__project--info,
-  .main__project--text{
+  .main__project--content{
     padding-top: 3%;
+  }
+
+  .main__project--content h3{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 2.3rem;
   }
 }
 
