@@ -707,7 +707,8 @@ SINGLE PROJECT
   margin-top: 15%;
 }
 
-.hero--project.hero--project{background: url(img/resortbg.jpg) no-repeat center center;}
+.hero--project.hero--project--resort{background: url(img/resortbg.jpg) no-repeat center center;}
+.hero--project.hero--project--acme{background: url(img/acme-bg.jpg) no-repeat center center;}
 
 .main__project h1{font-size: 3rem; text-align: left; margin-top: -10%;}
 
