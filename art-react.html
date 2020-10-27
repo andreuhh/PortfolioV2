@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Guffi Andrea Rect article">
     <title>Andrea Guffi Dev</title>
     <!-- font-awesome -->
   <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css" />
@@ -90,25 +91,87 @@
     </div>
   </aside>
 
-
-  <div class="hero hero--project">
+<!--
+  <div class="hero hero--project hero--project--flutter">
     <div class="hero__content"></div>
   </div>
+-->
+
 
   <main class="main__project">
-    <h1>Article name</h1>
+    <h2>React: 10 most frequently asked questions</h2>
     <div class="main__project--info">
-        <p>20 October</p>
-        <p>Category</p>
-        <p>#Tag</p>
+        <p>Jenuary 2020</p>
+        <p>web and mobile development</p>
+
     </div>
-    <div class="main__project--text">
-        <h2>Description</h2>
+    <div class="main__project--content">
+        <h4>1 : What is React?</h4>
         <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores sunt nulla nam beatae laudantium ipsum tenetur provident autem suscipit sint!
+            React is a Javascript library, created by Facebook / Instagram, 
+            which manages the user interface (i.e. the front-end of our applications).
+            It allows us to develop web applications using big data in a simple, fast and scalable way. Many companies such as AirBnB, Netflix, Uber, PayPal use React as a technology.
         </p>
+        <br>
+        <br>
+        
+        <h4>2 : What is the virtual DOM?</h4>
+        <p>
+            The Virtual DOM is a tree structure of Javascript objects (ReactElements) 
+            that represent the current DOM.
+            This representation of the DOM allows, when a change occurs, 
+            to re-render the component itself and all the components related to it 
+            (This translates into the re-execution of the code for the creation of the Virtual DOM).
+
+        </p>
+        <br>
+        <br>
+
+        <h4>3 : What is a componet?</h4>
+        <p>
+          A React application consists of components, each of which can be understood as a graphic component of the application.
+          Each component is independent of the other (self-contained) and can have a state (state) 
+          or properties (props). When a state or property changes, React does nothing more than re-render the component.
+        </p>
+        <br>
+        <p>
+          React rendering is said to be deterministic, because given a defined set of props and states the component will always show the same way.
+          A component in React is defined in JSX, which is a language that allows you to describe HTML in Javascript.
+        </p>
+        <br>
+        <br>
+
+        <h4>4 : What is a componet?</h4>
+        <p>
+          The properties of a component are called props. 
+          The props are the attributes set on the component itself and are used to put the 
+          components in communication 
+          with each other (parent-child communication).
+        </p>
+        <br>
+        <p>
+          The properties (props) are immutable, i.e. it is not possible to change them within the child component, this is because the child component is not the owner.
+          A component can access all its properties through the "this.props" object.
+        </p>
+        <br>
+        <br>
+
+        <h4>5 : What is the state of a component?</h4>
+        <p>
+          The state of a component is called state. The state is used to differentiate the views of a component.
+          Unlike the props, the state is mutable and private to the component because it does not belong to the parent component but rather to the component itself.
+        </p>
+        <br>
+        <p>
+          When defining the state, it is also necessary to specify the initial value that the state assumes at the time of component initialization.
+          A component accesses its state through the "this.state" object.
+        </p>
+        <br>
+        <br>
+     
+        
+        
     </div>
-    
   </main>
 
   <!-- footer -->
@@ -136,7 +199,7 @@
   </footer>
 
    <!-- Script -->
-  <script src="./js/app.js"></script>  
-  <script src="/js/mouse.js"></script> 
+  <script src="./js/app.js"></script> 
+  <script src="/js/mouse.js"></script>  
 </body>
 </html>
