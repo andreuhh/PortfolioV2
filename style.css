@@ -524,7 +524,7 @@ footer{
   color: var(--my-gray-1);
 }
 
-.love{color: red;}
+.love{color: var(--secondary-col);}
 
 @media screen and (max-width: 500px) {
   .footer {
