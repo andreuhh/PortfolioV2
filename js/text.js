@@ -1,5 +1,5 @@
 // TEXT SCRIPT
-const texts = ['Frontend Developer', 'UX Designer', 'Dreamer', 'Creative'];
+const texts = ['Frontend Developer', 'Dreamer', 'Creative'];
 let count = 0;
 let index = 0;
 let currentText = '';
