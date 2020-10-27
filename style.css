@@ -707,7 +707,7 @@ SINGLE PROJECT
   margin-top: 15%;
 }
 
-.hero--project.hero--project--resort{background: url(img/resortbg.jpg) no-repeat center center;}
+.hero--project.hero--project--resort{background: url(img/resort-bg.jpg) no-repeat center center;}
 .hero--project.hero--project--acme{background: url(img/acme-bg.jpg) no-repeat center center;}
 .hero--project.hero--project--taag{background: url(img/taag.jpg) no-repeat center center;}
 .hero--project.hero--project--casablu{background: url(img/casablu-bg.jpg) no-repeat center center;}
@@ -769,8 +769,8 @@ CURSOR
 ===============
 */
 .cursor{
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border: 2px solid var(--secondary-col);
   border-radius: 50%;
   position: absolute;
@@ -778,7 +778,7 @@ CURSOR
   pointer-events: none;
   transition: all 0.3s ease;
   transition-property: transform, background;
-  transform-origin: 100% 100%;
+  transform-origin: 30% 30%;
   z-index: 1;
   /*backdrop-filter: grayscale();*/
   backdrop-filter: hue-rotate(180deg);
