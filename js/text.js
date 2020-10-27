@@ -1,5 +1,5 @@
 // TEXT SCRIPT
-const texts = ['Frontend Developer', 'Dreamer', 'Creative'];
+const texts = ['Creative', 'Developer', 'Dreamer'];
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -18,5 +18,5 @@ let letter = '';
         count++;
         index = 0;
     }
-    setTimeout(type, 400);
+    setTimeout(type, 350);
 }());
